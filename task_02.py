@@ -8,6 +8,4 @@ email = 'Dear {},\nI look forward to meeting with you on {}.\nBest,\nMe'
 
 def prepare_email(name, time):
     """generates email"""
-    for item in prepare_email:
-        item = []
-        print email.format(name, time)
+    print email.format(name, time)
