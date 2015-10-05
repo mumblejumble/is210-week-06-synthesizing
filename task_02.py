@@ -12,11 +12,20 @@ def prepare_email(appointments):
 
         for loop: loops email statements and inserting list dataset everytime.
 
+        newlist: creates a list of looped f_emails
+
+    returns:
+        returns a list of 
+
     examples:
         >>>prepare_email([('Jen', '2015'), ('Max', 'March 3')])
         ['Dear Jen, \nI look forward to metting you with you on 2015.\nMe',
         'Dear Max, \nI look forward to meeting you on March 3.\nBest\nMe']
     """
     statement = 'Dear {},\nI look forward to meeting with you on {}.\nBest,\nMe'
+
     for appoint in appointments:
-        print statement.format(appoint[0], appoint[1])
+        f_email = statement.format(appoint[0], appoint[1])
+        print f_email
+        newlist = [f_email, f_email]
+    return newlist
