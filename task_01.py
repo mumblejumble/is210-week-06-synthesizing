@@ -5,6 +5,7 @@
 
 def get_party_stats(families, table_size=6):
     """returns total number of guests and total number of tables in tuple
+
     arguments:
         families: first argument.
 
@@ -26,9 +27,8 @@ def get_party_stats(families, table_size=6):
     """
 
     total_guests = 0
+    total_tables = 0
     for guests in families:
         total_guests = total_guests + len(guests)
-    total_tables = -((-len(families[0]) // table_size)
-                     + (-len(families[1]) // table_size)
-                     + (-len(families[2]) // table_size))
+        total_tables = total_tables + (-((-len(guests)) // table_size))
     return total_guests, total_tables
