@@ -11,9 +11,6 @@ def get_party_stats(families, table_size=6):
 
         table_size: second argument, has a default value 6
 
-        for loop: counting every guest name in every families and being added
-        to total_guests one by one in order.
-
     returns:
         returns sum of dataset(total_guests), and total number of tables needed.
 
