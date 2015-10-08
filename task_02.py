@@ -10,11 +10,6 @@ def prepare_email(appointments):
         appointments: would be passed by a list of two item tuples with the
         client's name and their appointment times as members.
 
-        newlist: makes the returned a list.
-
-        for loop: loops formatted emailbody, and appends itself to the list
-        untill the end of the list.
-
     returns:
         returns a list of formatted loops.
 
